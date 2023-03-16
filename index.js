@@ -8,7 +8,7 @@ for (let i =0; i < numberOfDrumButton; i++){
     });
 };
 
-addEventListener("keypress", function(event){
+document.addEventListener("keypress", function(event){
     makeSound(event.key);
 });
 
@@ -48,7 +48,7 @@ function makeSound(key) {
             let kick = new Audio("sounds/kick-bass.mp3");
             kick.play();
             break; 
-            
+
         default:console.log(buttonInnerHTML);
     }
 }
